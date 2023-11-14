@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Sign Up Form with Success Message</title>
+	</head>
+	<body>
+		<!-- Sign Up form -->
+		<div class="sign-box">
+			<div class="texts-box">
+				<h1 class="title">Stay updated!</h1>
+				<p class="text bottom">
+					Join 60,000+ product managers receiving monthly updates on:
+				</p>
+				<p class="text">
+					<img class="check" src="./assets/images/icon-list.svg" alt="check" />
+					Product discovery and building what matters
+				</p>
+				<p class="text">
+					<img class="check" src="./assets/images/icon-list.svg" alt="check" />
+					Measuring to ensure updates are a success
+				</p>
+				<p class="text">
+					<img class="check" src="./assets/images/icon-list.svg" alt="check" />
+					And much more!
+				</p>
+				<form class="form">
+					<div class="inp-title">
+						<label class="sign-label" for="email">Email address</label>
+						<p class="err-text">Valid email required</p>
+					</div>
+					<input
+						class="sign-inp"
+						type="text"
+						placeholder="email@company.com"
+						id="email"
+					/>
+					<button class="btn">Subscribe to monthly newsletter</button>
+				</form>
+			</div>
+			<img
+				class="sign-img"
+				src="./assets/images/illustration-sign-up-desktop.svg"
+				alt="sign img"
+			/>
+			<img
+				class="sign-img-mobile"
+				src="./assets/images/illustration-sign-up-mobile.svg"
+				alt="sign img"
+			/>
+		</div>
+
+		<!-- Success Message -->
+		<div class="success-box">
+			<img class="img-sc" src="./assets/images/icon-success.svg" alt="" />
+			<h1 class="title title-sc">Thanks for subscribing!</h1>
+			<p class="text text-sc">
+				A confirmation email has been sent to
+				<span class="entered-email">email</span>. Please open it and click the
+				button inside to confirm your subscription.
+			</p>
+			<button onclick="redirectMain()" class="btn btn-sc">Dismiss message</button>
+		</div>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>

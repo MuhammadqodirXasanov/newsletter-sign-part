@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(235, 18%, 26%);
+}
+/* Sign Up Part */
+.sign-box {
+	width: 900px;
+	display: none;
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	padding: 20px;
+	padding-left: 50px;
+	border-radius: 25px;
+	background: hsl(0, 0%, 100%);
+}
+.title {
+	font-size: 56px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	color: hsl(234, 29%, 20%);
+}
+.text {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+	color: hsl(234, 29%, 20%);
+}
+.bottom {
+	margin-bottom: 20px;
+}
+.sign-inp {
+	width: 100%;
+	border: 1px solid hsl(231, 7%, 60%);
+	padding: 15px 20px;
+	margin-bottom: 20px;
+	border-radius: 7px;
+}
+.sign-inp:hover {
+	border: 1px solid #000;
+}
+.form {
+	margin-top: 40px;
+}
+.btn {
+	cursor: pointer;
+	width: 100%;
+	color: white;
+	border: none;
+	padding: 15px 0;
+	border-radius: 7px;
+	background: hsl(234, 29%, 20%);
+	transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+	background: linear-gradient(90deg, #ff5379, #ff693e);
+	box-shadow: 3px 3px 15px rgb(155, 155, 155);
+}
+.sign-img {
+	height: 550px;
+}
+.sign-img-mobile {
+	display: none;
+}
+.sign-label {
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	color: hsl(234, 29%, 20%);
+}
+.inp-title {
+	display: flex;
+	margin-bottom: 8px;
+	justify-content: space-between;
+}
+.err-text {
+	display: none;
+	font-size: 12px;
+	color: red;
+}
+.inp-err {
+	border: 1px solid red;
+	color: red;
+	background: rgba(255, 0, 0, 0.123);
+}
+/* Success Part */
+.success-box {
+	display: none;
+	width: 500px;
+	padding: 50px;
+	border-radius: 30px;
+	background: hsl(0, 0%, 100%);
+}
+.img-sc {
+	margin-bottom: 20px;
+}
+.entered-email {
+	font-weight: 600;
+}
+.text-sc {
+	font-size: 20px;
+	display: block;
+	gap: 10px;
+	margin-bottom: 10px;
+	color: hsl(234, 29%, 20%);
+}
+.btn-sc {
+	font-size: 20px;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 1220px) {
+	.sign-box {
+		width: 750px;
+	}
+	.title {
+		font-size: 40px;
+	}
+	.text {
+		font-size: 14px;
+	}
+	.sign-inp {
+		padding: 10px 15px;
+	}
+	.form {
+		margin-top: 25px;
+	}
+	.sign-img {
+		height: 400px;
+	}
+	/* --- */
+	.success-box {
+		padding: 35px;
+		width: 350px;
+	}
+	.title-sc {
+		font-size: 30px;
+	}
+	.img-sc {
+		width: 40px;
+	}
+	.btn-sc {
+		font-size: 14px;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.sign-box {
+		gap: 30px;
+		margin: 25px;
+	}
+	.title {
+		font-size: 36px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.sign-box {
+		width: 450px;
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 0;
+		padding: 0px;
+	}
+	.sign-img {
+		display: none;
+	}
+	.sign-img-mobile {
+		display: block;
+		width: 100%;
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
+	}
+	.texts-box {
+		padding: 25px;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.sign-box {
+		border-radius: 15px;
+	}
+	.sign-img-mobile {
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+	.title {
+		font-size: 30px;
+	}
+	/* --- */
+	.success-box {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		border-radius: 0;
+	}
+	.title-sc {
+		font-size: 35px;
+	}
+	.btn-sc {
+		margin-top: 50px;
+	}
+}
